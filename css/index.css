@@ -1,0 +1,71 @@
+body {
+  background-color: #f5f0e1;
+  margin: 0;
+}
+.header {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+.header span {
+  background-color: #ffd700;
+  padding: 0 10px;
+}
+.dashed-border {
+  border-top: 1px dashed #ccc;
+  margin: 0;
+}
+.subtitle {
+  text-align: center;
+  color: #28a745;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.form-section, .table-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form-container, .table-container {
+  width: 80%;
+  max-width: 1200px;
+}
+.form-container label {
+  font-weight: bold;
+}
+.form-container input {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.submit-btn {
+  background-color: #d2691e;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+.table-container table {
+  width: 100%;
+  background-color: #fff;
+}
+.visit-btn {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.delete-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
