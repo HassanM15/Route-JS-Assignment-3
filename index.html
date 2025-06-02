@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Fontawsome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <!-- <link rel="stylesheet" href="./css/all.min.css"> -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <h1 class="header">
+            Bookm<span>arker</span>
+        </h1>
+
+        <!-- Dashed Border -->
+        <div class="dashed-border bg-dark"></div>
+
+        <!-- Subtitle -->
+        <div class="subtitle">
+            <i class="fas fa-book me-2 text-success"></i>Bookmark your favorite
+            sites<i class="fas fa-book ms-2 text-success"></i>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <div class="form-container">
+                <div class="mb-3">
+                    <label for="siteName" class="form-label"><i
+                            class="fas fa-book me-2"></i>Site Name</label>
+                    <input type="text" class="form-control" id="siteName"
+                        placeholder="Bookmark Name" oninput="validateForm()">
+                    <div id="nameFeedback" class="invalid-feedback">Site Name is
+                        required.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="siteUrl" class="form-label"><i
+                            class="fas fa-globe me-2"></i>Site URL</label>
+                    <input type="text" class="form-control" id="siteUrl"
+                        placeholder="Website URL" oninput="validateUrl()">
+                    <div id="urlFeedback" class="invalid-feedback"></div>
+                    <div id="urlValidFeedback" class="valid-feedback">Valid
+                        URL</div>
+                </div>
+                <button type="button" class="submit-btn" id="submitBtn"
+                    onclick="addBookmark()" disabled>SUBMIT</button>
+            </div>
+        </div>
+
+        <!-- Dashed Border -->
+        <div class="dashed-border w-75 mt-2 m-auto bg-dark"></div>
+
+        <!-- Table Section -->
+        <div class="table-section mt-4">
+            <div class="table-container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookmarkTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="./js/index.js"> </script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
